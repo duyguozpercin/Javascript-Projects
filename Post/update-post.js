@@ -12,7 +12,7 @@ const messageBox = document.createElement('div');
 messageBox.id = 'message-box';
 form.parentElement.insertBefore(messageBox, form);
 
-// Create Post button on top (also for index.html equivalent)
+
 const topCreatePostButton = document.createElement('button');
 topCreatePostButton.textContent = 'Create New Post';
 topCreatePostButton.className = 'button button--primary';
@@ -21,7 +21,7 @@ topCreatePostButton.addEventListener('click', () => {
 });
 form.parentElement.insertBefore(topCreatePostButton, form);
 
-// Back to Home button
+
 const backButton = document.createElement('button');
 backButton.textContent = 'Back to Home';
 backButton.className = 'button button--secondary';
@@ -30,7 +30,7 @@ backButton.addEventListener('click', () => {
 });
 form.parentElement.appendChild(backButton);
 
-// Fetch the post and prefill the form
+
 fetch(`${URL}/${postId}`)
   .then((response) => response.json())
   .then((post) => {
@@ -42,7 +42,6 @@ fetch(`${URL}/${postId}`)
     showMessage('Failed to load post data.', 'error');
   });
 
-// Form submission handler
 form.addEventListener('submit', function (event) {
   event.preventDefault();
 

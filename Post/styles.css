@@ -64,7 +64,6 @@ ul {
 
 .button--success {
   background-color: #28a745;
-  
 }
 
 .button--success:hover {
@@ -130,7 +129,9 @@ textarea {
   border: 1px solid #f5c6cb;
 }
 
-#fetch-posts {
-  display: block;
-  margin: 0 auto 30px auto;
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 30px;
 }
