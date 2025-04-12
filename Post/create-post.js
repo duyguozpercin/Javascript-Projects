@@ -17,5 +17,6 @@ document.getElementById('create-post-form').addEventListener('submit', function(
       alert('Post successfully created!');
       window.location.href = 'index.html';
   })
+
   .catch(error => console.error('Error creating post:', error));
 });
