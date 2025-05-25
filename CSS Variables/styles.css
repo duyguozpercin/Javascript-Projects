@@ -3,9 +3,22 @@
   --spacing: 10px;
   --blur: 10px;
 }
+body {
+  text-align: center;
+  background: #193549;
+  color: white;
+  font-family: "helvetica neue", sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+}
 
 img {
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur));
 }
+
+.h1 {
+  color: var(--base);
+}
+
