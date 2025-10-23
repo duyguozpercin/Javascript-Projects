@@ -19,6 +19,7 @@ const comments = [
       const currentYear = (new Date()).getFullYear();
       return currentYear - person.year >= 19;
     });
+    
     console.log({isAdult});
 
       // Array.prototype.every() // is everyone 19 or older?
